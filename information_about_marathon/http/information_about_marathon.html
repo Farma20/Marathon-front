@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Информация о марафоне</title>
+    <link href="../css/information_about_marathon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="all_header">
+    <div>
+        <img class="logo" src="../pictures/footer&header/logo.png" alt="logo">
+    </div>
+    <div class="buttonSignInLogIn">
+        <div class="buttonLogIn">Вход</div>
+        <div class="buttonSignIn">Регистрация</div>
+    </div>
+</header>
+<hr>
+<!-- основная часть -->
+<div class="main_div all">
+    <div class="name_block">
+        <h1>Кросс “Быстрый пёс”</h1>
+    </div>
+    <div class="info_block">
+        <div class="place_info">
+            <div class="info_block_text">Дата: 17.04.2022</div>
+            <div class="info_block_text">Город: Владивосток</div>
+            <div class="info_block_text">Страна: Россия</div>
+        </div>
+        <div class="description">
+            <div class="info_block_text">Внезапно, путь этого марафона будет проходить по мостам Владивостока. Наслаждайтесь видами города!</div>
+        </div>
+        <div class="photo_block">
+            <img class="photo" src="../pictures/foto_marathona.png" alt="photo">
+        </div>
+    </div>
+
+    <div class="form_block">
+        <div class="distance info_block_text">Выбор дисстанции:</div>
+        <form action="" method="get" name="distance">
+            <div class="input_block">
+                <input type="radio" id="distance1" name="distance" class="custom_checkbox" value="5" checked>
+                <label for="distance1">5км</label>
+
+                <input type="radio" id="distance2" name="distance" class="custom_checkbox" value="21" >
+                <label for="distance2">21км</label>
+
+                <input type="radio" id="distance3" name="distance" class="custom_checkbox" value="42" >
+                <label for="distance3">42км</label>
+            </div>
+            <div class="sub"><input type="submit" value="Зарегестрироваться"></div>
+        </form>
+    </div>
+</div>
+<!-- основная часть -->
+<hr>
+<footer>
+    <div class="three_collums">
+        <div class="line"></div>
+        <img class="logo_footer" src="../pictures/footer&header/logo.png" alt="logo">
+        <div class="line"></div>
+    </div>
+    <div class="three_collums all" style="justify-content: space-around">
+        <div class="download_app">
+            <div>Попробуй наше приложение:</div>
+            <img class="app" src="../pictures/footer&header/download.png" alt="download">
+        </div>
+        <div class="soc_networks">
+            <img class="socs" src="../pictures/footer&header/twitter.png" alt="twitter">
+            <img class="socs" src="../pictures/footer&header/instagram.png" alt="instagram">
+            <img class="socs" src="../pictures/footer&header/facebook.png" alt="facebook">
+        </div>
+        <div class="contacts">
+            <div class="row_footer">О проекте</div>
+            <div class="row_footer">Контакты</div>
+            <div class="row_footer">Конфидециальность</div>
+        </div>
+    </div>
+    <div class="copywrite">© Marathon Skills 2021, Все права защищены</div>
+</footer>
+</body>
+</html>
