@@ -172,8 +172,8 @@ body {
     height: 490px;
     left: 95px;
     top: 316px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 90px;
     background: #2F9A54;
     border-radius: 25px;
 }
@@ -290,6 +290,10 @@ h1 {
     opacity: 0;
 }
 
+.custom_checkbox:hover + label {
+    background: #dadada;
+}
+
 .custom_checkbox + label{
     display: flex;
     justify-content: center;
@@ -303,6 +307,7 @@ h1 {
     font-size: 15px;
     font-family: 'Segoe UI';
     border-radius: 10px;
+    transition: all ease 0.3s;
 }
 
 .custom_checkbox:checked + label{
@@ -328,7 +333,11 @@ h1 {
     color:#2b834a;
     font-size: 23px;
     font-family: 'Segoe UI';
+    transition: all ease 0.3s;
+}
 
+.sub input:hover {
+    background: #dadada;
 }
 /* форма */
 
