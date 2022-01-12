@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Редактирование марафона</title>
+    <link href="../css/calculator.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="(min-width:200px) and (max-width:768px)" href="../css/calculator.mobile.css" />
+</head>
+<body>
+    <header class="all_header">
+        <div>
+            <img class="logo" src="../pictures/footer&header/logo.png" alt="logo">
+        </div>
+        <div class="buttonSignInLogIn">
+            <div class="buttonLogIn">Вход</div>
+            <div class="buttonSignIn">Регистрация</div>
+        </div>
+    </header>
+<div class="line_header"></div>
+<!-- основная часть -->
+<div class="flex_block">    
+    <div class="first_main_block">
+        <div class="description">Калькулятор индекса массы тела</div>
+       
+        <div class="first_calculate">
+            <form class="form_block" method="get" action="" name="idx_mass">
+                <div class="fields">
+                    <div class="height_field">
+                        <label for="height">Рост:</label>
+                        <input type="number" name="height" size="3"/>
+                    </div>
+                    <div class="space"></div>
+                    <div class="weight_field">
+                        <label for="weight">Вес:</label>
+                        <input type="number" name="weight" size="3"/>
+                    </div>
+                </div>
+                <div class="submit_block"><input type="submit" value="Рассчитать"/></div>
+            </form>
+            <div class="hr_div"><hr></div>
+            <div class="information">
+                Ваш индекс массы тела: 17.17 Данное значение ИМТ соответствует: Недостаточной массе тела
+            </div>    
+        </div>
+        <div class="picture_block">
+            <img class="picture" src="../pictures/3EGJSmJppr8.jpg" alt="picture">
+        </div>
+    </div>
+    <div class="vertical"></div>
+    <div class="second_main_block">
+        <div class="description">Калькулятор базового обмена веществ</div>
+        <div class="second_calculate">
+            <form method="get" action="" name="methabolism">
+                <div class="fields">
+                    <div class="height_field">
+                        <label for="height">Рост:</label>
+                        <input type="number" name="height" size="3"/>
+                    </div>
+                    <div class="space"></div>
+                    <div class="weight_field">
+                        <label for="weight">Вес:</label>
+                        <input type="number" name="weight" size="3"/>
+                    </div>
+                    <div class="space"></div>
+                    <div class="age_field">
+                        <label for="weight">Возраст:</label>
+                        <input type="number" name="age" size="3"/>
+                    </div>
+                </div>
+                <div class="genders_lab">Пол:</div>
+                <div class="radio_check">
+                    <div class="radio_form">
+                        <label for="male">Мужчина</label>
+                        <input id="male" name="gender" type="radio" value="0" checked/>
+                    </div>
+                    <div class="space"></div>
+                    <div class="radio_form">
+                        <label for="female">Женщина</label>
+                        <input id="female" name="gender" type="radio" value="1"/>
+                    </div>
+                </div>
+                <div class="genders_lab">Уровень физической нагрузки:</div>
+                <div class="radio_check activity_level">
+                    <div class="radio_form">
+                        <label for="low">Низкая</label>
+                        <input id="low" name="activity_level" type="radio" value="0" checked/>
+                    </div>
+                    <div class="space"></div>
+                    <div class="radio_form">
+                        <label for="moderate">Умеренная</label>
+                        <input id="moderate" name="activity_level" type="radio" value="1"/>
+                    </div>
+                    <div class="space"></div>
+                    <div class="radio_form">
+                        <label for="midle">Средняя</label>
+                        <input id="midle" name="activity_level" type="radio" value="0"/>
+                    </div>
+                    <div class="space"></div>
+                    <div class="radio_form">
+                        <label for="high">Высокая</label>
+                        <input id="high" name="activity_level" type="radio" value="1"/>
+                    </div>
+                </div>
+                <div class="submit_block"><input type="submit" value="Рассчитать"></div>
+                <div class="hr_div"><hr></div>
+                <div class="information">
+                    Для поддержания веса организму требуется:<br>1642 ккал в деwнь
+                </div>
+            </form>
+        </div>
+        <div class="metabolism_description">Базовый обмен веществ - это минимальное количество энергии, необходимое для обеспечения нормальной жизнедеятельности организма в стандартных условиях.</div>
+    </div>
+</div>    
+<!-- основная часть -->
+
+<footer>
+    <div class="footer_logo_line">
+        <div class="line"></div>
+        <img class="logo_footer" src="../pictures/footer&header/logo.png" alt="logo">
+        <div class="line"></div>
+    </div>
+    <div class="three_collums all" style="justify-content: space-around">
+        <div class="download_app">
+            <div>Попробуй наше приложение:</div>
+            <img class="app" src="../pictures/footer&header/download.png" alt="download">
+        </div>
+        <div class="soc_networks">
+            <img class="socs" src="../pictures/footer&header/twitter.png" alt="twitter">
+            <img class="socs" src="../pictures/footer&header/instagram.png" alt="instagram">
+            <img class="socs" src="../pictures/footer&header/facebook.png" alt="facebook">
+        </div>
+        <div class="contacts">
+            <div class="row_footer">О проекте</div>
+            <div class="row_footer">Контакты</div>
+            <div class="row_footer">Конфидециальность</div>
+        </div>
+    </div>
+    <div class="copywrite">© Marathon Skills 2021, Все права защищены</div>
+</footer>
+</body>
+</html>

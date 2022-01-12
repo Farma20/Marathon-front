@@ -1,0 +1,389 @@
+/* Общее */
+html{
+    font-family: Segoe UI;
+}
+
+body {
+    margin: 0;
+    min-height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.all {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+header {
+    margin-left: 10px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.all_header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.buttonSignInLogIn {
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: end;
+    transition: all ease 0.3s;
+}
+
+.buttonLogIn {
+    size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    height: 40px;
+    width: 75px;
+    box-shadow: 0 0 4px -4px rgba(0, 0, 0, 0.25);
+    transition: all ease 0.3s;
+}
+
+.buttonLogIn:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 5px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonSignIn {
+    width: 160px;
+    height: 40px;
+    border-radius: 18px;
+    background-blend-mode: darken;
+    size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #18AB39;
+    transition: all ease 0.3s;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.buttonSignIn:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 5px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.line_header {
+    width: 100%;
+    height: 1px;
+    background-color: #696969;
+    margin-bottom: 30px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer_logo_line {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.three_collums {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_footer {
+    width: 180px;
+}
+
+.line {
+    width: calc((100% - 220px) / 2);
+    height: 1px;
+    background-color: black;
+}
+
+.download_app {
+    width: 350px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.app {
+    height: 40px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.soc_networks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    margin: 20px;
+}
+
+.socs {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.row_footer {
+    font-size: 15px;
+    margin: 3px;
+    color: black;
+    transition: all 0.2s
+}
+
+.row_footer:hover {
+    color: grey;
+}
+
+.copywrite {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 30px;
+}
+/* Общее */
+
+/* основная часть */
+.flex_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first_main_block{
+    width: 50%;
+    height: 800px;
+    /* background: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.first_calculate{
+    width: 350px;
+    height: 225px;
+    background: #2F9A54;
+    margin-bottom: 20px;
+    border-radius: 22px;
+}
+
+form{
+    width: 100%;
+    height: 90px;
+    /* background: chocolate; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.fields{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background: violet; */
+    margin-top: 30px;
+    margin-left: -15px;
+}
+
+.fields input{
+    width: 40px;
+    height: 23px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.space{
+    width: 60px;
+}
+
+.submit_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.submit_block input{
+    border-radius: 10px;
+    border: none;
+    color:white;
+    color:#2F9A54;
+    width: 110px;
+    height: 30px;
+    transition: all ease 0.3s;
+    font-weight: bold;
+}
+
+.submit_block input:hover{
+    background: #dadada;
+}
+
+.first_calculate .hr_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.first_calculate hr{
+    border:0.1px solid rgba(0, 0, 0, 0.28);
+    width: 90%;
+}
+
+.first_calculate .information{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.picture_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 425px;
+    border: 1px solid black;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.picture{
+    height: 100%;
+    width: 100%;
+}
+
+.vertical{
+    border-bottom:1px solid black;
+    width: 100%;
+    height: 60px;
+}
+
+
+.second_main_block{
+    width: 50%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: #696969;     */
+}
+
+.second_calculate{
+    width: 450px;
+    height: 410px;
+    background: #2F9A54;
+    margin-bottom: 20px;
+    border-radius: 22px;    
+}
+
+.second_calculate .space{
+    width: 45px;    
+}
+
+.genders_lab{
+    width: 100%;
+    /* background: chocolate; */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.radio_check{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.activity_level .space{
+    width: 30px;
+}
+
+/* .radio_check input[type=radio]{
+    margin-top: 5px;
+} */
+
+.radio_form{
+    display: flex;
+    align-items: center;
+}
+
+.radio_form input{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.second_calculate .hr_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.second_calculate hr{
+    border:0.1px solid rgba(0, 0, 0, 0.28);
+    width: 90%;
+}
+
+.second_calculate .information{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+.metabolism_description{
+    width: 450px;
+    height: 125px;
+    background: #C4C4C4;
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;    
+}
+/* основная часть */
