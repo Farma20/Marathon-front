@@ -371,6 +371,8 @@ form{
 
 .second_calculate .information{
     width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
     text-align: center;
     color: white;
 }
