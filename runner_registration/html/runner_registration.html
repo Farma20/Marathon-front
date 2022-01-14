@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Информация о марафоне</title>
+    <link href="../css/runner_registration.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="(min-width:200px) and (max-width:768px)" href="../css/runner_registration_mobile.css" />
+</head>
+<body>
+    <header class="all_header">
+        <div>
+            <img class="logo" src="../pictures/footer&header/logo.png" alt="logo">
+        </div>
+        <div class="buttonSignInLogIn">
+            <div class="buttonLogIn">Вход</div>
+            <div class="buttonSignIn">Регистрация</div>
+        </div>
+    </header>
+<div class="line_header"></div>
+<!-- основная часть -->
+<div class="main_div all">
+    <h1>Первый раз учавствуете?</h1>
+    <h4>Заполните необходимые поля</h4>
+    <form method="POST" action="{{ route('runner_reg') }}" class="bordered form1">
+        <!-- @csrf -->
+        <div class="inp">
+            <div>
+                <label>Страна</label>
+                <input name="country" type="text" value="{{ old('country') }}">
+            </div>
+            <div>
+                <label>Дата рождения</label>
+                <input name="date_of_birthday" type="date" max="2012-12-21" min="1901-01-01" value="{{ old('date_of_birthday') }}">
+            </div>
+            <div class="gender">
+                <label>Пол</label>
+                <select name="gender">
+                    <option value=0 {{ old('gender') === 0 ? 'selected="selected"' : '' }}>Мужской</option>
+                    <option value=1 {{ old('gender') === 1 ? 'selected="selected"' : '' }}>Женский</option>
+                </select>
+            </div>
+        </div>
+        <div class="subs1"><input type="submit" value="Далее"></div>
+</div>
+<!-- основная часть -->
+
+<footer>
+    <div class="footer_logo_line">
+        <div class="line"></div>
+        <img class="logo_footer" src="../pictures/footer&header/logo.png" alt="logo">
+        <div class="line"></div>
+    </div>
+    <div class="three_collums all" style="justify-content: space-around">
+        <div class="download_app">
+            <div>Попробуй наше приложение:</div>
+            <img class="app" src="../pictures/footer&header/download.png" alt="download">
+        </div>
+        <div class="soc_networks">
+            <img class="socs" src="../pictures/footer&header/twitter.png" alt="twitter">
+            <img class="socs" src="../pictures/footer&header/instagram.png" alt="instagram">
+            <img class="socs" src="../pictures/footer&header/facebook.png" alt="facebook">
+        </div>
+        <div class="contacts">
+            <div class="row_footer">О проекте</div>
+            <div class="row_footer">Контакты</div>
+            <div class="row_footer">Конфидециальность</div>
+        </div>
+    </div>
+    <div class="copywrite">© Marathon Skills 2021, Все права защищены</div>
+</footer>
+</body>
+</html>
