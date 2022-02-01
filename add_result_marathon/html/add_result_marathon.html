@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Резальтат забега</title>
+    <link href="../css/add_result_marathon.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="(min-width:200px) and (max-width:768px)" href="../css/add_result_marathon_mobile.css" />
+</head>
+<body>
+    <header class="all_header">
+        <div>
+            <img class="logo" src="../pictures/footer&header/logo.png" alt="logo">
+        </div>
+        <div class="buttonSignInLogIn">
+            <div class="buttonLogIn">Вход</div>
+            <div class="buttonSignIn">Регистрация</div>
+        </div>
+    </header>
+<div class="line_header"></div>
+<!-- основная часть -->
+<div class="main_div all">
+    <div class="name_block">
+        <h1>Резальтат забега</h1>
+    </div>
+    <div class="marathon_name"><h1>Название марафона</h1></div>
+    <form class="form_block" action="" method="get" name="add_new_marathon">
+        <div class="data_div">
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" name="name"  size="25">
+            </div>    
+            <div>
+                <label for="country">Фамилия:</label>
+                <input type="text" name="country" size="25">
+            </div>
+            <div>
+                <label for="city">Отчество:</label>
+                <input type="text" name="city"  size="25">
+            </div>
+            <div>
+                <label for="date">Результат:</label>
+                <input type="text" name="result"  size="25">
+            </div>
+        </div>
+        <div class="input_block">
+            <input type="radio" id="distance1" name="distance" class="custom_checkbox" value="5" checked>
+            <label for="distance1">5км</label>
+
+            <input type="radio" id="distance2" name="distance" class="custom_checkbox" value="21" >
+            <label for="distance2">21км</label>
+
+            <input type="radio" id="distance3" name="distance" class="custom_checkbox" value="42" >
+            <label for="distance3">42км</label>
+        </div>
+        <div class="sub"><input type="submit" value="Сохранить результат"></div>
+    </form>
+</div>
+<!-- основная часть -->
+
+<footer>
+    <div class="footer_logo_line">
+        <div class="line"></div>
+        <img class="logo_footer" src="../pictures/footer&header/logo.png" alt="logo">
+        <div class="line"></div>
+    </div>
+    <div class="three_collums all" style="justify-content: space-around">
+        <div class="download_app">
+            <div>Попробуй наше приложение:</div>
+            <img class="app" src="../pictures/footer&header/download.png" alt="download">
+        </div>
+        <div class="soc_networks">
+            <img class="socs" src="../pictures/footer&header/twitter.png" alt="twitter">
+            <img class="socs" src="../pictures/footer&header/instagram.png" alt="instagram">
+            <img class="socs" src="../pictures/footer&header/facebook.png" alt="facebook">
+        </div>
+        <div class="contacts">
+            <div class="row_footer">О проекте</div>
+            <div class="row_footer">Контакты</div>
+            <div class="row_footer">Конфидециальность</div>
+        </div>
+    </div>
+    <div class="copywrite">© Marathon Skills 2021, Все права защищены</div>
+</footer>
+</body>
+</html>

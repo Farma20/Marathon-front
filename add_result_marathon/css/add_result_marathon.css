@@ -1,0 +1,381 @@
+/* Общее */
+html{
+    font-family: Segoe UI;
+}
+
+body {
+    margin: 0;
+    min-height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.all {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    width: 1200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.all_header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.buttonSignInLogIn {
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all ease 0.3s;
+}
+
+.buttonLogIn {
+    size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 45px;
+    width: 84px;
+    box-shadow: 0 0 4px -4px rgba(0, 0, 0, 0.25);
+    transition: all ease 0.3s;
+}
+
+.buttonLogIn:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 5px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonSignIn {
+    width: 183px;
+    height: 45px;
+    border-radius: 20px;
+    background-blend-mode: darken;
+    size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #18AB39;
+    transition: all ease 0.3s;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.buttonSignIn:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 5px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.line_header {
+    width: 100%;
+    height: 1px;
+    background-color: #696969;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer_logo_line {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.three_collums {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_footer {
+    width: 240px;
+}
+
+.line {
+    width: calc((100% - 380px) / 2);
+    height: 1px;
+    background-color: black;
+}
+
+.download_app {
+    width: 350px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.app {
+    height: 48px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.soc_networks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 222px;
+}
+
+.socs {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.row_footer {
+    font-size: 17px;
+    margin: 4px;
+    color: black;
+    transition: all 0.2s
+}
+
+.row_footer:hover {
+    color: grey;
+}
+
+.copywrite {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 50px;
+}
+/* Общее */
+
+/* основная часть */
+body {
+    margin: 0;
+}
+
+.all {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.main_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+    height: 470px;
+    left: 95px;
+    top: 316px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    background: #2F9A54;
+    border-radius: 25px;
+}
+
+.name_block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    /* margin-left: 30px; */
+}
+
+
+h1 {
+   font-size: 28px;
+   font-family: 'Segoe UI';
+   font-weight:400;
+   color: white;
+   margin-top: 10px;
+   /* margin-right: 25px; */
+}
+
+.marathon_name h1 {
+    font-size: 20px;
+    font-weight:300;
+    margin-top: 0;
+}
+
+.form_block {
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -180px;
+    margin-top: 30px;
+    /* background: blue; */
+}
+
+.data_div {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    /* margin-left: 30px; */
+    /* background: chocolate; */
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight:400;
+    color: white;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#description {
+    height: 100px;
+}
+
+#description_label{
+    margin-right: 5px;
+}
+
+.description {
+    display: flex;
+    margin-top: 2px;
+}
+
+.name_column{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    /* background:darkgoldenrod; */
+    color: white;
+    font-family: 'Segoe UI';
+    margin-left: 240px;
+    margin-top: 30px;
+}
+
+.name_column div {
+    margin-left: 55px;
+}
+
+.distance_div {
+    /* background: darkgrey; */
+    width: 60%;
+    margin-left: 120px;
+}
+
+.distance_div div{
+    display: flex;
+    
+}
+
+.distance_div label {
+    width: 400px;
+    font-size: 18px;
+}
+
+.distance_div input {
+    width: 550px;
+}
+
+.input_block {
+    display: flex;
+    justify-content: center;
+    margin-left: 170px;
+    margin-top: -30px;
+    /* background: chartreuse; */
+    width: 400px;
+}
+
+
+.custom_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom_checkbox:hover + label {
+    background: #dadada;
+}
+
+.custom_checkbox + label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    margin-left: 18px;
+    width: 90px;
+    height: 31px;
+    background: rgb(255, 255, 255);
+    color: #2b834a;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    border-radius: 10px;
+    transition: all ease 0.3s;
+}
+
+.custom_checkbox:checked + label{
+    background: #25692c;
+    color: #ffffff;
+}
+
+#check {
+    margin-top: 2px;
+}
+
+.sub {
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub input {
+    width: 268px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color:#2b834a;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    transition: all ease 0.3s;
+    margin-left: 200px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.sub input:hover {
+    background: #dadada;
+}
+
+/* основная часть */
