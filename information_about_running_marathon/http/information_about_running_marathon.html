@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Информация о марафоне</title>
+    <link href="../css/information_about_running_marathon.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="(min-width:200px) and (max-width:768px)" href="../css/information_about_running_marathon_mobile.css" />
+</head>
+<body>
+    <header class="all_header">
+        <div>
+            <img class="logo" src="../pictures/footer&header/logo.png" alt="logo">
+        </div>
+        <div class="buttonSignInLogIn">
+            <div class="buttonLogIn">Вход</div>
+            <div class="buttonSignIn">Регистрация</div>
+        </div>
+    </header>
+<div class="line_header"></div>
+<!-- основная часть -->
+
+<script>
+    function show_time(){
+        let radio_div = document.getElementById('radio_div');
+        let radio_elements = radio_div.getElementsByTagName('input');
+        let check_distance;
+
+        for(let i = 0; i < radio_elements.length; i++){
+            if(radio_elements[i].checked){
+                check_distance = radio_elements[i].value;
+                break;
+            }
+        }
+
+        // В переменной check_distance лежит значение выбранной дисстанции. В теории с помощью этой переменной
+        // достаем из БД время начала забега на этой дисстаниции.
+        
+        var now_time = new Date();
+        var begin_time = '00:01'; //В эту переменную достаем время из бд
+        begin_time = begin_time.split(':');
+        begin_time = new Date(now_time.getFullYear(), now_time.getMonth(), now_time.getDay()-1, Number(begin_time[0]), Number(begin_time[1]));
+        var time_ms = now_time - begin_time;
+
+        var hours = Math.trunc(time_ms / 3600000);
+        time_ms = time_ms - (hours * 3600000);
+        var minutes = Math.round(time_ms / 60000);
+        
+        document.getElementById('time').textContent = hours + 'ч. '+ minutes +'мин.';
+    }
+</script>
+
+<div class="main_div all">
+    <div class="name_block">
+        <h1>Кросс “Быстрый пёс”</h1>
+    </div>
+    <div class="info_block">
+        <div class="place_info">
+            <div class="info_block_text">Дата: 17.04.2022</div>
+            <div class="info_block_text">Город: Владивосток</div>
+            <div class="info_block_text">Страна: Россия</div>
+        </div>
+        <div class="description">
+            <div class="info_block_text">Внезапно, путь этого марафона будет проходить по мостам Владивостока. Наслаждайтесь видами города!</div>
+        </div>
+        <div class="photo_block">
+            <img class="photo" src="../pictures/foto_marathona.png" alt="photo">
+        </div>
+    </div>
+
+    <div class="form_block">
+        <div class="distance info_block_text">Выбор дисстанции:</div>
+        <form action="" method="get" name="distance">
+            <div class="input_block" id='radio_div'>
+                <input type="radio" id="distance1" name="distance" class="custom_checkbox" value="5" checked>
+                <label for="distance1">5км</label>
+
+                <input type="radio" id="distance2" name="distance" class="custom_checkbox" value="21" >
+                <label for="distance2">21км</label>
+
+                <input type="radio" id="distance3" name="distance" class="custom_checkbox" value="42" >
+                <label for="distance3">42км</label>
+            </div>
+            <div class="time_block" id="time">
+                Время с начала марафона
+            </div>
+            <div class="sub"><input type="submit" value="Показать время" onclick = "show_time(); return false"></div>
+        </form>
+    </div>
+</div>
+<!-- основная часть -->
+
+<footer>
+    <div class="footer_logo_line">
+        <div class="line"></div>
+        <img class="logo_footer" src="../pictures/footer&header/logo.png" alt="logo">
+        <div class="line"></div>
+    </div>
+    <div class="three_collums all" style="justify-content: space-around">
+        <div class="download_app">
+            <div>Попробуй наше приложение:</div>
+            <img class="app" src="../pictures/footer&header/download.png" alt="download">
+        </div>
+        <div class="soc_networks">
+            <img class="socs" src="../pictures/footer&header/twitter.png" alt="twitter">
+            <img class="socs" src="../pictures/footer&header/instagram.png" alt="instagram">
+            <img class="socs" src="../pictures/footer&header/facebook.png" alt="facebook">
+        </div>
+        <div class="contacts">
+            <div class="row_footer">О проекте</div>
+            <div class="row_footer">Контакты</div>
+            <div class="row_footer">Конфидециальность</div>
+        </div>
+    </div>
+    <div class="copywrite">© Marathon Skills 2021, Все права защищены</div>
+</footer>
+</body>
+</html>
