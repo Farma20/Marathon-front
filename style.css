@@ -174,23 +174,11 @@ footer {
 
 
 /* Главная страница */
-
-.button {
-    height: 100px;
-    width: 300px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.marathonsInfo {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
+.main {
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    background:#18AB39;
 }
 /* Главная страница */
 
