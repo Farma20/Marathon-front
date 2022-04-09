@@ -1,1 +1,1 @@
-# MarathonSkills
+# MarathonSkills Фронт сайта для регистрации на марафон
